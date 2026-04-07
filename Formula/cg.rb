@@ -1,21 +1,21 @@
 class Cg < Formula
   desc "Terminal-native typed clipboard for AI-assisted developers"
   homepage "https://clipgate.github.io"
-  version "0.1.3"
+  version "0.1.4"
   license :cannot_represent
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://clipgate.github.io/releases/v0.1.3/cg-aarch64-apple-darwin.tar.gz"
-    sha256 "9c54dcc5217740d36430f543413d555a62a450e382905562900d3757dc4a7f76"
+    url "https://clipgate.github.io/releases/v0.1.4/cg-aarch64-apple-darwin.tar.gz"
+    sha256 "f56af4c53ab08dc2f74dc1ce0ca310816b48eae7f481cf98f6fc7b5cd5d68a3d"
   elsif OS.mac?
-    url "https://clipgate.github.io/releases/v0.1.3/cg-x86_64-apple-darwin.tar.gz"
-    sha256 "3d2126a973431afc9555593ab46a69ed4694d2a38db858c5382145853cfeb133"
+    url "https://clipgate.github.io/releases/v0.1.4/cg-x86_64-apple-darwin.tar.gz"
+    sha256 "ee145e14cf489d5f4474345f3f65de8496320c92cf4fb3a4478c782ec1351a1c"
   elsif Hardware::CPU.arm?
-    url "https://clipgate.github.io/releases/v0.1.3/cg-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "5fec878ca9d0f9de2ca858f77a08d9500c2f5c01e64287c966c0b948c7484dd9"
+    url "https://clipgate.github.io/releases/v0.1.4/cg-aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "3f358b57d544704934097b63cd2305a7e2e58354883fc692c9d4836007604c61"
   else
-    url "https://clipgate.github.io/releases/v0.1.3/cg-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "ba3cb97c882ea9751c1b20a3c04bea30ae7eaec64945a2290e50499a18b12d97"
+    url "https://clipgate.github.io/releases/v0.1.4/cg-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "24c60c9e537f80226daba1ac013c98cf1c004362b19c994d0ac1bf7ff56f5997"
   end
 
   def install
